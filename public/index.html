@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Elegance</title>
+    <style>
+        /* Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #5a2d3d;
+        }
+
+        /* Barra de Navegação */
+        header {
+            background-color: #3e1c28;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav .logo h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .nav-links a:hover {
+            color: #ffcb9f;
+        }
+
+        /* Seção de Produtos */
+        .produtos {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .produto-lista {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .produto {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .produto img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .produto h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .produto p {
+            font-size: 18px;
+            color: #d35400;
+            margin-bottom: 20px;
+        }
+
+        .produto button {
+            padding: 10px 20px;
+            background-color: #5a2d3d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .produto button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #3e1c28;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .footer-content p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Perfume Elegance</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="produtos">
+        <h2>Produtos</h2>
+        <div class="produto-lista">
+            <div class="produto">
+                <img src="perfume1.jpg" alt="Perfume 1">
+                <h3>Perfume Floral</h3>
+                <p>R$ 250,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="perfume2.jpg" alt="Perfume 2">
+                <h3>Perfume Oriental</h3>
+                <p>R$ 300,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="perfume3.jpg" alt="Perfume 3">
+                <h3>Perfume Amadeirado</h3>
+                <p>R$ 280,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Perfume Elegance. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Elegance</title>
+    <style>
+        /* Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #5a2d3d;
+        }
+
+        /* Barra de Navegação */
+        header {
+            background-color: #3e1c28;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav .logo h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .nav-links a:hover {
+            color: #ffcb9f;
+        }
+
+        /* Seção de Produtos */
+        .produtos {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .produto-lista {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .produto {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .produto img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .produto h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .produto p {
+            font-size: 18px;
+            color: #d35400;
+            margin-bottom: 20px;
+        }
+
+        .produto button {
+            padding: 10px 20px;
+            background-color: #5a2d3d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .produto button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #3e1c28;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .footer-content p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Perfume Elegance</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="produtos">
+        <h2>Produtos</h2>
+        <div class="produto-lista">
+            <div class="produto">
+                <img src="perfume1.jpg" alt="Perfume 1">
+                <h3>Perfume Floral</h3>
+                <p>R$ 250,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="perfume2.jpg" alt="Perfume 2">
+                <h3>Perfume Oriental</h3>
+                <p>R$ 300,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="perfume3.jpg" alt="Perfume 3">
+                <h3>Perfume Amadeirado</h3>
+                <p>R$ 280,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Perfume Elegance. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Elegance</title>
+    <style>
+        /* Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #5a2d3d;
+        }
+
+        /* Barra de Navegação */
+        header {
+            background-color: #3e1c28;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav .logo h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .nav-links a:hover {
+            color: #ffcb9f;
+        }
+
+        /* Seção de Produtos */
+        .produtos {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .produto-lista {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .produto {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .produto img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .produto h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .produto p {
+            font-size: 18px;
+            color: #d35400;
+            margin-bottom: 20px;
+        }
+
+        .produto button {
+            padding: 10px 20px;
+            background-color: #5a2d3d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .produto button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #3e1c28;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .footer-content p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Perfume Elegance</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="produtos">
+        <h2>Produtos</h2>
+        <div class="produto-lista">
+            <div class="produto">
+                <img src="perfume1.jpg" alt="Perfume 1">
+                <h3>Perfume Floral</h3>
+                <p>R$ 250,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="perfume2.jpg" alt="Perfume 2">
+                <h3>Perfume Oriental</h3>
+                <p>R$ 300,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="perfume3.jpg" alt="Perfume 3">
+                <h3>Perfume Amadeirado</h3>
+                <p>R$ 280,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Perfume Elegance. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Elegance</title>
+    <style>
+        /* Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #5a2d3d;
+        }
+
+        /* Barra de Navegação */
+        header {
+            background-color: #3e1c28;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav .logo h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .nav-links a:hover {
+            color: #ffcb9f;
+        }
+
+        /* Seção de Produtos */
+        .produtos {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .produto-lista {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .produto {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .produto img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .produto h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .produto p {
+            font-size: 18px;
+            color: #d35400;
+            margin-bottom: 20px;
+        }
+
+        .produto button {
+            padding: 10px 20px;
+            background-color: #5a2d3d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .produto button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #3e1c28;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .footer-content p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Perfume Elegance</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="produtos">
+        <h2>Produtos</h2>
+        <div class="produto-lista">
+            <div class="produto">
+                <img src="perfume1.jpg" alt="Perfume 1">
+                <h3>Perfume Floral</h3>
+                <p>R$ 250,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="perfume2.jpg" alt="Perfume 2">
+                <h3>Perfume Oriental</h3>
+                <p>R$ 300,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="perfume3.jpg" alt="Perfume 3">
+                <h3>Perfume Amadeirado</h3>
+                <p>R$ 280,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Perfume Elegance. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Elegance</title>
+    <style>
+        /* Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #5a2d3d;
+        }
+
+        /* Barra de Navegação */
+        header {
+            background-color: #3e1c28;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav .logo h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .nav-links a:hover {
+            color: #ffcb9f;
+        }
+
+        /* Seção de Produtos */
+        .produtos {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .produto-lista {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .produto {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .produto img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .produto h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .produto p {
+            font-size: 18px;
+            color: #d35400;
+            margin-bottom: 20px;
+        }
+
+        .produto button {
+            padding: 10px 20px;
+            background-color: #5a2d3d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .produto button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #3e1c28;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .footer-content p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Perfume Elegance</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="produtos">
+        <h2>Produtos</h2>
+        <div class="produto-lista">
+            <div class="produto">
+                <img src="perfume1.jpg" alt="Perfume 1">
+                <h3>Perfume Floral</h3>
+                <p>R$ 250,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="perfume2.jpg" alt="Perfume 2">
+                <h3>Perfume Oriental</h3>
+                <p>R$ 300,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="perfume3.jpg" alt="Perfume 3">
+                <h3>Perfume Amadeirado</h3>
+                <p>R$ 280,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Perfume Elegance. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+vv
